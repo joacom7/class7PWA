@@ -19,7 +19,7 @@ MongoClient.connect(url, (error, db) =>{
 
 
         //Creamos la coneccion
-        dbo.collection('profesores').insertOne(data, (err, Collection) => {
+        dbo.collection('cursos').insertOne(data, (err, Collection) => {
             if(error) throw error
             console.log('Inserccion de datos correcta')
             db.close()
